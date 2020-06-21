@@ -13,7 +13,10 @@
     <body>
         <div class="nav-bar"></div>
         <div id="app">
-            <product></product>
+            <div class="cart">
+                Cart{{cart}}
+            </div>
+            <product :premium='premium' @add-to-cart='updatecart' @remove-from-cart='removefromcart'></product>
 
            
             
